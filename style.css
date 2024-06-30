@@ -2,145 +2,76 @@
     margin:0;
     padding:0;
     overflow-x: hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
+}
+.main-color{
+    color: #FF305B !important;
+}
+.gray-bg{
+    background-color: #E2E2E2;
+}
+
+.threelines {
+    margin-bottom: 40px;
+}
+.threelines div {
+    display: block;
+    height: 1px;
+    background-color: #FF305B;
+    margin: auto;
+}
+.short-line {
+    width: 70px;
+}
+.long-line {
+    width: 160px;
+    margin-top: 5px !important;
+    margin-bottom: 4px !important;
 }
 
 
-.navbar{
+#navbar{
     background-color: #212529;
-    display: flex;
-    width: 100%;
-    height: 7vh;
-    align-items: center;
-    justify-content: space-between; 
+    padding: 12px;
 }
-.navbar h2{
-    color:#DECFBA;
-    margin-left:2%;
+.navbar-nav ul{
+    color:#fff;
+    transition: all .5s ease;
 }
-.navbar ul{
-    display: flex;
-    gap: 10px;
-    color: #DECFBA;
-    margin-right:2%;
-}
-#homenav{
-    color: white;
-}
-.AboutLink{
-    color: #DECFBA;
-    text-decoration: none;
-}
-.AboutLink:hover{
-    color: white;
-}
-.ServicesLink{
-    color: #DECFBA;
-    text-decoration: none;
-}
-.ServicesLink:hover{
-    color: white;
-}
-.PortfolioLink{
-    color: #DECFBA;
-    text-decoration: none;
-}
-.PortfolioLink:hover{
-    color: white;
-}
-.TestimonialLink{
-    color: #DECFBA;
-    text-decoration: none;
-}
-.TestimonialLink:hover{
-    color: white;
-}
-.BlogLink{
-    color: #DECFBA;
-    text-decoration: none;
-}
-.BlogLink:hover{
-    color: white;
-}
-.ContactLink{
-    color: #DECFBA;
-    text-decoration: none;
-}
-.ContactLink:hover{
-    color: white;
+.nav-item :hover{
+    color: #FF305B !important;
 }
 
-
-
-.Home{
-    width:100%;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('images/background.jpg');
-    /* Set background size to cover the entire body */
+#Home{
+    background-image: url('images/slider-01.jpg');
     background-size: cover;
-    /* Set background attachment to fixed if you want the background to remain fixed as you scroll */
     background-attachment: fixed;
-    /* Optionally, you can set the background position */
     background-position: center;
 }
-.HomeContent{
-    text-align: center;
-    font-size:xx-large;
-}
-.Home h2{
-    color:#ffffff
-}
-.Home h1{
-    justify-content: center;
-    color:#DECFBA;
-}
-
-
-
-
-.About{
-    overflow: hidden;
-    width:100%;
-    height:70vh;
-    display: flex;
-}
-.AboutContent{
-    width: 100%;
-    display: flex;
-    height:100vh;
-} 
-.AboutContent img{
-    width:80%;
-    margin-top: 8%;
-    margin-left: 20%;
-    border-radius: 20px
-}
-.imag{
-    width:30%;
-    margin-left: 5%;
-    margin-right: 4%;
-}
-.text{
-    margin-top:5% ;
-    width:50%;
-    overflow: hidden;
-}
-.AboutContent h2{
-    font-size: xx-large;
-    color:#333333;
-}
-.AboutContent p{
-    font-size: medium;
-    width:100%;
+#About{
     color:#555555;
+}
+#About a{
+    color:#9E9E9E;
+    text-decoration: none;
+}
+.AboutButton{
+    padding:10px 15px;
+    border:#FF305B 1px solid;
+    border-radius: 3px;
+    transition: 0.3s;
+    background-color:#FF305B;
+    color: #fff;
+}
+.AboutButton:hover{
+    background-color:#fff;
+    color: #FF305B;
+    cursor: pointer;
 }
 .dotted-line {
     margin-top: 30px;
-    border-bottom: 2px dotted #555555; /* Creates a dotted line at the bottom */
-    width: 100%; /* Adjust the width as needed */
+    border-bottom: 2px dotted #555555;
+    width: 100%; 
 }
 .list {
     width: 100%;
@@ -155,332 +86,56 @@
 }
 
 .list li {
-    width: 100%; /* Each item takes up half the width of the container */
+    width: 100%;
     box-sizing: border-box;
     margin: 30px;
 }
- 
-.text button{
-    padding: 13px 20px;
-    font-size: 16px;
-    border: #DECFBA;
-    border-radius:3px;
-    background-color:#DECFBA ;
-    color: #fff;
-    margin: 5% 2%;
-    
-}
-.text button:hover{
-    border: #DECFBA;
-    background-color:#fff ;
-    color: #DECFBA;
-}
-
-
-
-.Services{
-    background-color: #E2E2E2;
+.Heading{
+    font-size: 40px;
     text-align: center;
-    width: 100%;
-    height: 60vh;
 }
-.Services h2{
-    color:#333333;
-    font-size: xx-large;
+.content{
+    transition: 0.3s;
+    cursor: pointer;
+    min-height: 100%;
 }
-#ser{
-    margin:5%;
+.content:hover{
+    background-color: #fff;
 }
-.Services p{
-    color: #555555;
-   
-}
-.servicesContent{
-    display: flex;
-    width: 80%;
-    margin-left: 10%;
-    gap:5%;
-}
-.servicesContent div{
-    padding: 0,5%;
-}
-.ui{
-    display: flex;
-    flex-wrap: wrap;
-    width:25%;
-    height:30vh;
-    justify-content: center;
-    align-items: center;
-}
-.ui:hover{
-    background-color: white;
-}
-.ux{
-    display: flex;
-    flex-wrap: wrap;
-    width:25%;
-    height:30vh;
-    justify-content: center;
-    align-items: center;
-}
-.ux:hover{
-    background-color: white;
-}
-.app{
-    display: flex;
-    flex-wrap: wrap;
-    width:25%;
-    height:30vh;
-    justify-content: center;
-    align-items: center;
-}
-.app:hover{
-    background-color: white;
-}
-.design{
-    display: flex;
-    flex-wrap: wrap;
-    width:25%;
-    height:30vh;
-    justify-content: center;
-    align-items: center;
-}
-.design:hover{
-    background-color: white;
-}
-
-
-
-.Portfolio{
-    width: 100%;
-    height: 100vh;
-    color:#333333;
-}
-.Portfolio h2{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: xx-large;
-}
-.Portfolio ul{
+#Services{
     color:#555555;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap:2%;
 }
-.Portfolio li:hover{
-    color:#DECFBA;
-}
-.Portfolio img{
-    width:400px ;
-}
-.pics{
-    margin-top: 5%;
-    margin-left: 10%;
-    width: 80%;
-    display: flex;
-    gap:20px 20px;
-    flex-wrap: wrap;
+#Portfolio li{
+    transition: all .5s ease;
+    color:#555555;
 }
 
-
-
-.long{
-    width:100%;
-}
-.long img{
-    width: 100%;
+#Portfolio li:hover{
+    color:#FF305B;
+    cursor: pointer;
 }
 
-.Testimonial{
-    width: 100%;
-    height: 40vh;
-}
-#test{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.Testimonial h2{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: xx-large;
-    color:#212529;
-}
-.Testimonial p{
-    color:#333333;
-    text-align: center;
-    width: 40%;
-}
-.Blog{
-    width: 100%;
-    height: 80vh;
-    color:#333333;
-    background-color: #E2E2E2;
-    overflow: hidden;
-}
-.Blog h2{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: xx-large;
-}
-.pic{
-    width: 80%;
-    display:flex;
-    gap:5%;
-    justify-content: center;
-    margin-left: 10%;
-}
-.pic p{
-    color:#333333; 
-}
-.pic button{
-    margin-top: 10%;
-    border-style: hidden;
-    color:#DECFBA;
-    background-color: white;
-    font-size: medium;
-}
-.pic h2{
-    color:#DECFBA;
-    text-align: left;
-    font-size: x-large;
-    margin: 10px 0px;
-}
-.web{
-    background-color: white;
-    width:33%;
-    overflow: hidden;
-}
-.web img{
-    height: 50%;
-    width: 100%;
-}
-.web div{
-    height: 50%;
-    padding: 20px;
-}
-.dev{
-    background-color: white;
-    width:33%;
-    overflow: hidden;
-}
-.dev img{
-    height: 50%;
-    width: 100%;
-}
-.dev div{
-    height: 50%;
-    padding: 20px;
-}
-.full{
-    background-color: white;
-    width:33%;
-    overflow: hidden;
-}
-.full img{
-    height: 50%;
-    width: 100%;
-}
-.full div{
-    height: 50%;
-    padding: 20px;
+#PortContainer img{
+    max-width: 100%; 
+    max-height: 100%; 
 }
 
-.Contact{
-    width: 100%;
-    height: 70vh;
+#IconSection{
+    color:#555555;
 }
-.Contact h2{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: xx-large;
-    color:#333333; 
-}
-
-.Contact form{
-    width: 80%;
-    height: 30vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    gap:10px;
-    overflow: hidden;
-}
-.namecon{
-    width: 49%;
-    height: 20%;
-}
-#Name{
-    display: block;
-    width: 98%;
-    height: 90%;
-    color: #212529;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding-left: 10px;
-}
-#Name:focus{
-    border-color: #DECFBA;
-}
-.emailcon{
-    width: 50%;
-    height: 20%;
-}
-#Email{
-    display: block;
-    width: 98%;
-    height: 90%;
-    color: #212529;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding-left: 10px;
-
-}
-.subjectcon{
-    width:100%;
-    height: 20%;
-}
-#Subject{
-    display: block;
-    width: 99%;
-    height: 90%;
-    color: #212529;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding-left: 10px;
-}
-.messagecon{
-    width:100%;
-    height: 50%;
-}
-#Message{
-    display: block;
-    width: 99%;
-    height: 99%;
-    color: #212529;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding-left: 10px;
-    line-height: 10px; ;
-    text-align: left;
-}
-.Contact button{
-    margin-top: 10px;
-    margin-left: 10%;
+#Contact button{
     padding: 13px 20px;
     font-size: 16px;
-    border: #DECFBA;
+    border: #FF305B 1px solid;
+    background-color: #FF305B;
     border-radius:3px;
-    background-color:#DECFBA ;
     color: #fff;
-    
+}
+#Contact button:hover{
+    background-color:#fff;
+    color: #FF305B;
+    cursor: pointer;
+}
+#Footer p{
+    color:#555555;
 }
